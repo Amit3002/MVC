@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11191" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11156"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EmojiCell" id="gO2-wq-II6" customClass="PHSEmojiCollectionViewCell" customModule="PHSNoMassiveViewController" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="146" height="117"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="146" height="117"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emoji Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWK-j8-ecl">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🐝" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vau-8W-YNn">
+                        <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="vau-8W-YNn" firstAttribute="centerY" secondItem="gO2-wq-II6" secondAttribute="centerY" id="5EO-Sa-5or"/>
+                <constraint firstItem="vau-8W-YNn" firstAttribute="centerX" secondItem="gO2-wq-II6" secondAttribute="centerX" id="QGs-pg-D5N"/>
+                <constraint firstItem="uWK-j8-ecl" firstAttribute="centerX" secondItem="gO2-wq-II6" secondAttribute="centerX" id="SF8-uu-eQO"/>
+                <constraint firstItem="uWK-j8-ecl" firstAttribute="top" secondItem="gO2-wq-II6" secondAttribute="top" constant="16" id="e8r-kv-XSC"/>
+            </constraints>
+            <size key="customSize" width="146" height="117"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="uWK-j8-ecl" id="NKb-kc-mgd"/>
+                <outlet property="emojiLabel" destination="vau-8W-YNn" id="s1v-OX-4gp"/>
+            </connections>
+            <point key="canvasLocation" x="43" y="51.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
